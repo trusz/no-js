@@ -86,31 +86,41 @@
 
         <hr />
 
-        <!-- Time -->
+        <!-- Moadl -->
         <section>
             <header>
-                <h2 id="time-element">Time Element</h2>
+                <h2 id="modal">Modal</h2>
             </header>
             <aside>
 
-                <p>
-                <div>
-                    The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in
-                    London's Hyde Park.
+                <div class="wrapper">
+                    <a href="#demo-modal"
+                       target="_self"><button>Open Demo Modal</button></a>
                 </div>
 
-                <div>
-                    The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for
-                    at
-                    least <time datetime="PT2H30M">2h 30m</time>.
-                </div>
-                </p>
+                <div id="demo-modal"
+                     class="modal">
+                    <div class="modal__content">
+                        <h1>CSS Only Modal</h1>
 
-                <p>
-                    <small>
-                        Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"></a>
-                    </small>
-                </p>
+                        <p>
+                            You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+                        </p>
+
+                        <div class="modal__footer">
+                            Made with <i class="fa fa-heart"></i>, by <a href="https://twitter.com/denicmarko"
+                               target="_blank">@denicmarko</a>
+                        </div>
+
+                        <a href="#"
+                           target="_self"
+                           class="modal__close">&times;</a>
+                    </div>
+                </div>
+
+                <small>
+                    Source: <a href="https://markodenic.com/css-tips/"></a>
+                </small>
 
                 <details>
                     <summary>Source Code</summary>
@@ -152,6 +162,51 @@
                     <summary>Source Code</summary>
                     <script src="https://gist.github.com/trusz/69af48f6cf480b1e983c029514d162cb.js"></script>
                 </details>
+
+
+            </aside>
+        </section>
+
+
+        <hr />
+
+        <!-- Range Validation -->
+        <section>
+            <header>
+                <h2 id="range-validation">Range Validation</h2>
+            </header>
+            <aside>
+
+                <p>
+                <form>
+                    <label>
+                        Values between 0 and 10 are valid
+                        <input id='range-validation-0'
+                               name="range-validation-0"
+                               min="1"
+                               max="10"
+                               type="number"
+                               value="5" />
+                    </label>
+                    <label>
+                        Values between 0 and 10 are valid
+                        <input id='range-validation-0'
+                               name="range-validation-0"
+                               min="1"
+                               max="10"
+                               type="number"
+                               value="12" />
+                    </label>
+                </form>
+
+                </p>
+
+                <details>
+                    <summary>Source Code</summary>
+                    <script src="https://gist.github.com/trusz/7fe503ef44dc163a85b7a38dfa3cb6ca.js"></script>
+                </details>
+
+
 
 
             </aside>
