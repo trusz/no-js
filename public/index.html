@@ -15,10 +15,7 @@
     </script>
 
     <link rel="stylesheet"
-          href="/mvp.css">
-    <link rel="stylesheet"
-          href="/assets/css/print.css"
-          media="print">
+          href="/style.css">
 
     <meta name="description"
           content="No JS">
@@ -52,11 +49,67 @@
           href="/my.webmanifest"> -->
     <meta name="theme-color"
           content="#FF00FF">
+
+    <base target="_blank">
 </head>
 
 <body>
 
+    <main>
+        <!-- Tooltip -->
+        <section>
+            <header>
+                <h2 id="dynamic-tooltips">Dynamic Tooltip</h2>
+            </header>
+            <aside>
 
+                <p>
+                    Hover <span class="tooltip"
+                          data-tooltip="Tooltip Content">Here</span> to see the tooltip.
+                    You can also hover <span class="tooltip"
+                          data-tooltip="This is another Tooltip Content">here</span> to see another example.
+                </p>
+
+                <p>
+                    <small>
+                        Source: <a href="https://markodenic.com/css-tips/"></a>
+                    </small>
+                </p>
+
+            </aside>
+        </section>
+
+        <hr />
+
+        <!-- Time -->
+        <section>
+            <header>
+                <h2 id="time-element">Time Element</h2>
+            </header>
+            <aside>
+
+                <p>
+                <div>
+                    The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in
+                    London's Hyde Park.
+                </div>
+
+                <div>
+                    The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for
+                    at
+                    least <time datetime="PT2H30M">2h 30m</time>.
+                </div>
+                </p>
+
+                <p>
+                    <small>
+                        Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"></a>
+                    </small>
+                </p>
+
+            </aside>
+        </section>
+    </main>
 
 </body>
 
